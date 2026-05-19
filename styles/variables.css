@@ -4,7 +4,7 @@
   --accent-font: "PressStart2P";
   --title-text-weight: 715;
   --main-text-weight: 410;
-  --press2-text-weight: 400;
+  --main-font-weight: 400;
   --gradient-horizontal: repeating-linear-gradient(
     0deg,
     #d3d3d3 0px,
@@ -20,10 +20,10 @@
     transparent 4px
   );
   --gradient-darken: linear-gradient(#e7e7e7 0%, #e7e7e7 1%, #1a1a1a 100%);
-  --standart-width: clamp(375px, 200vw, 700px);
+  --standart-width: clamp(280px, 100vw, 700px);
   --standart-height: clamp(327px, 80vw, 368px);
-  --title-font-size: clamp(3.0625rem, 4vw, 4.0625rem);
-  --decription-font-size: clamp(0.875rem, 4vw, 1.3475rem);
+  --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --decription-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --card-height-desktop: 30px;
   --card-height-mobile: 52px;
   --text-stroke-color: #ffffff;
