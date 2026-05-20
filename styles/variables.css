@@ -20,7 +20,7 @@
     transparent 4px
   );
   --gradient-darken: linear-gradient(#e7e7e7 0%, #e7e7e7 1%, #1a1a1a 100%);
-  --standart-width: clamp(280px, 100vw, 700px);
+  --standart-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --standart-height: clamp(327px, 80vw, 368px);
   --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --decription-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);

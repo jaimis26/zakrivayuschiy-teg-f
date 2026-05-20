@@ -32,7 +32,6 @@
   justify-content: center;
   margin: 100px auto 98px;
   border: 2px solid #000000;
-  box-sizing: content-box;
 }
 
 h1 {
@@ -60,7 +59,6 @@ main {
   width: var(--standart-width);
   border: 2px solid #000000;
   margin-bottom: 50px;
-  box-sizing: content-box;
 }
 
 .card-title {
@@ -69,7 +67,7 @@ main {
   font-variation-settings: "wght" var(--title-text-weight);
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding: 4px 10px;
 }
 
 .label {
@@ -107,7 +105,7 @@ main {
 }
 
 .card-image {
-  width: clamp(280px, 100vw, 700px);
+  inline-size: 100%;
 }
 
 .filter-brightness {
@@ -174,7 +172,7 @@ main {
   align-items: center;
 }
 
-.card__like-button::after {
+.button::after {
   content: "";
   position: absolute;
   left: 0;
@@ -188,7 +186,7 @@ main {
   z-index: 0;
 }
 
-.card__like-button:hover::after {
+.button:hover::after {
   transform: scaleX(1);
 }
 
@@ -239,22 +237,6 @@ main {
   margin-bottom: 100px;
 }
 
-.save-memory::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s ease-in-out;
-}
-
-.save-memory:hover::after {
-  transform: scaleX(1);
-}
-
 .modal-dialog {
   width: clamp(21.3125rem, 21.05rem + 1.13vw, 22.0625rem);
   height: 191px;
@@ -289,22 +271,6 @@ h3 {
   justify-self: center;
 }
 
-.ok-btn::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s ease-in-out;
-}
-
-.ok-btn:hover::after {
-  transform: scaleX(1);
-}
-
 .tape {
   position: relative;
   z-index: 1;
@@ -319,9 +285,7 @@ dialog::backdrop {
   opacity: 0.75;
 }
 
-.card__like-button:focus,
-.save-memory:focus,
-.ok-btn:focus {
+.button:focus {
   outline: none;
   box-shadow: 2px 2px 0px #000000;
 }
